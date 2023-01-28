@@ -14,7 +14,7 @@ function UserItem({ user: { login, avatar_url, followers_url, following_url } })
                     </div>
                     <div className="login text-center">
                         <h1 className='card-title my-2 '>{login}</h1>
-                        <Link to={`/users/${login}`}>Show Profile</Link>
+                        <Link to={`/user/${login}`}>Show Profile</Link>
                     </div>
                 </div>
             </div>
