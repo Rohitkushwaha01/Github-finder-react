@@ -13,7 +13,7 @@ export default function About() {
                 <br />
                 <p>Github is a Open source contributing platform allows users to contribute to anyones project which you like.</p>
                 <br />
-                <p>This app is made by using Github API(Application program integration)</p>
+                <p>This app is made by using Github API(Application program interface)</p>
             </div>
         </div>
     )
