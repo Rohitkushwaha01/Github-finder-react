@@ -1,7 +1,6 @@
 import { useState,useContext} from 'react';
 import GithubContext from '../../context/github/Github.context';
 import AlertContext from '../../context/alert/Alert.context';
-import Alert from '../layout/Alert';
 
 export default function UserSearch() {
 
