@@ -1,4 +1,4 @@
-import { useState,useContext, useReducer } from 'react';
+import { useState,useContext} from 'react';
 import GithubContext from '../../context/github/Github.context';
 
 
