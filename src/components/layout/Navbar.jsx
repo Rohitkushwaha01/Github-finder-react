@@ -21,10 +21,10 @@ export default function Navbar() {
             <Link to="/" className='btn btn-ghost btn-sm rounded-btn'>
               Home
             </Link>
-            <Link to="/About" className='btn btn-ghost btn-sm rounded-btn'>
+            <Link to="/about" className='btn btn-ghost btn-sm rounded-btn'>
               About
             </Link>
-            <Link to="/Contact" className='btn btn-ghost btn-sm rounded-btn'>
+            <Link to="/contact" className='btn btn-ghost btn-sm rounded-btn'>
               Contact
             </Link>
           </div>
