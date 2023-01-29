@@ -3,9 +3,8 @@ import GithubContext from "../../context/github/Github.context"
 
 export default function UserProfile() {
     const { user } = useContext(GithubContext)
-    console.log(user)
     const { avatar_url, bio, blog, location, name, html_url, twitter_username } = user
-    // followers, following, created_at, public_repos,  login, 
+    // followers, following, created_at, public_repos,  login,
     return (
         <div className="flex justify-around m-auto flex-wrap lg:flex-nowrap">
             <img src={avatar_url} alt="" className="rounded-3xl lg:w-[20%] sm:w-[50%] md:w-[40%] m-auto w-[80%]" />

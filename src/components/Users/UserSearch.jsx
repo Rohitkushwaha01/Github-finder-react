@@ -29,20 +29,20 @@ export default function UserSearch() {
   }
 
   return (
-    <div className='grid grid-cols-1 xl:grid-cols2 lg:grid-cols-2 md:grid-cols-2 mb-8 gap-8'>
+    <div className='flex justify-center items-center mb-4'>
       <div className=''>
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <div className="relative">
-              <input type="text" className="w-full pr-40 bg-gray-200 input input-lg text-black" placeholder='Search' value={text} onChange={handleChange} />
-              <button type='submit' className='absolute top-0 right-0 rounded-l-none w-36 btn btn-lg' >Search</button>
+              <input type="text" className="w-full pr-40 bg-gray-200 input input-lg text-black focus:outline-amber-300 " placeholder='Search' value={text} onChange={handleChange} />
+              <button type='submit' className='absolute top-0 right-0 rounded-l-none w-36 btn btn-lg text-amber-300 hover:bg-amber-300 hover:text-black' >Search</button>
             </div>
           </div>
         </form>
       </div>
       {users.length > 0 && (
         <div>
-        <button className="btn btn-ghost btn-lg" onClick={handleClear}>
+        <button className="btn btn-ghost btn-lg hover:text-amber-300 ml-2" onClick={handleClear}>
           Clear
         </button>
       </div>
