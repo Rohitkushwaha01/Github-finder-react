@@ -5,12 +5,14 @@ import UserProfile from "./UserProfile"
 
 export default function User() {
 
-    const { getUser } = useContext(GithubContext)
+    const { getUser, getUserRepo } = useContext(GithubContext)
     const params = useParams()
 
-    useEffect(() => {
+    useEffect( () => {
         getUser(params.login)
-    })
+        getUserRepo(params.login)
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <div>
